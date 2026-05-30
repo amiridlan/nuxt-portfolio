@@ -31,16 +31,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
-        run: npm run build
+      - name: Generate static site
+        run: npm run generate
         env:
           NUXT_PUBLIC_R2_BASE_URL: ${{ secrets.R2_BASE_URL }}
+          NUXT_PUBLIC_INSTAGRAM_URL: ${{ secrets.NUXT_PUBLIC_INSTAGRAM_URL }}
+          NUXT_PUBLIC_WEBSITE_URL: ${{ secrets.NUXT_PUBLIC_WEBSITE_URL }}
+          NUXT_PUBLIC_CONTACT_EMAIL: ${{ secrets.NUXT_PUBLIC_CONTACT_EMAIL }}
 
       - name: Install Netlify CLI
         run: npm install -g netlify-cli
 
       - name: Deploy to Netlify
-        run: netlify deploy --prod
+        run: netlify deploy --prod --dir .output/public
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

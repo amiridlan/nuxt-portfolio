@@ -1,6 +1,6 @@
 [build]
-  command = "npm run build && mkdir -p .netlify/static"
-  publish = ".netlify/static"
+  command = "npm run generate"
+  publish = ".output/public"
 
 [build.environment]
   NODE_VERSION = "20"

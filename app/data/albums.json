@@ -34,14 +34,21 @@
     "slug": "glory-sound-2026",
     "title": "GLORY SOUND 2026",
     "description": "Event covered for Pasar Glory (Organiser)",
-    "cover": "cityscape.jpg",
+    "cover": "pasar-glory-2026/pasar-glory-2026-03.avif",
     "photos": [
       {
         "id": "cityscape",
-        "filename": "cityscape.jpg",
+        "filename": "pasar-glory-2026/pasar-glory-2026-01.avif",
         "title": "Tokyo at Dusk",
         "alt": "Neon city lights reflecting on rain-slicked streets in Tokyo",
-        "aspectRatio": "16/9"
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "cityscape",
+        "filename": "pasar-glory-2026/pasar-glory-2026-02.avif",
+        "title": "Tokyo at Dusk",
+        "alt": "Neon city lights reflecting on rain-slicked streets in Tokyo",
+        "aspectRatio": "3/4"
       }
     ]
   },
