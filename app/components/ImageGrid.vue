@@ -52,7 +52,7 @@ function setLoaded(key: string) {
              The :ref callback catches images already complete in browser cache
              (the @load event fires before Vue attaches on a cached refresh). -->
         <img
-          :ref="(el) => { if (el instanceof HTMLImageElement && el.complete) setLoaded(photo.id ?? photo.filename) }"
+          :ref="(el) => { if (el && (el as HTMLImageElement).complete) setLoaded(photo.id ?? photo.filename) }"
           :src="`${r2BaseUrl}/${photo.filename}`"
           :alt="photo.alt ?? photo.title"
           loading="lazy"
