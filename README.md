@@ -240,7 +240,7 @@ GitHub Actions will install dependencies, build the Nuxt SSR bundle, and deploy 
 ```toml
 [build]
   command = "npm run build"
-  publish = ".output/public"
+  publish = ".netlify/static"
 
 [build.environment]
   NODE_VERSION = "20"
