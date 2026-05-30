@@ -48,8 +48,11 @@ function setLoaded(key: string) {
           aria-hidden="true"
         />
 
-        <!-- Actual image — starts transparent, fades in on load -->
+        <!-- Actual image — starts transparent, fades in on load.
+             The :ref callback catches images already complete in browser cache
+             (the @load event fires before Vue attaches on a cached refresh). -->
         <img
+          :ref="(el) => { if (el instanceof HTMLImageElement && el.complete) setLoaded(photo.id ?? photo.filename) }"
           :src="`${r2BaseUrl}/${photo.filename}`"
           :alt="photo.alt ?? photo.title"
           loading="lazy"

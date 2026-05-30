@@ -45,6 +45,7 @@ function setLoaded(id: string) {
           />
 
           <img
+            :ref="(el) => { if (el instanceof HTMLImageElement && el.complete) setLoaded(album.id) }"
             :src="`${r2BaseUrl}/${album.cover}`"
             :alt="`Cover image for ${album.title}`"
             loading="lazy"
