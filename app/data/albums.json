@@ -1,0 +1,96 @@
+[
+  {
+    "id": "qwer-rockation-2026",
+    "slug": "qwer-rockation-2026",
+    "title": "QWER ROCKATION 2026",
+    "description": "Event covered for Malaysian Kpop Fans (Official Media Partner)",
+    "cover": "iceland.jpg",
+    "photos": [
+      {
+        "id": "iceland",
+        "filename": "iceland.jpg",
+        "title": "Icelandic Highlands",
+        "alt": "Dramatic volcanic mountains under a stormy sky in Iceland",
+        "aspectRatio": "2/3"
+      },
+      {
+        "id": "desert",
+        "filename": "desert.jpg",
+        "title": "Sahara Dunes",
+        "alt": "Sweeping sand dunes bathed in warm sunset light in the Sahara",
+        "aspectRatio": "3/2"
+      },
+      {
+        "id": "forest",
+        "filename": "forest.jpg",
+        "title": "Pacific Northwest Forest",
+        "alt": "Towering ancient fir trees wrapped in morning mist",
+        "aspectRatio": "4/5"
+      }
+    ]
+  },
+  {
+    "id": "glory-sound-2026",
+    "slug": "glory-sound-2026",
+    "title": "GLORY SOUND 2026",
+    "description": "Event covered for Pasar Glory (Organiser)",
+    "cover": "cityscape.jpg",
+    "photos": [
+      {
+        "id": "cityscape",
+        "filename": "cityscape.jpg",
+        "title": "Tokyo at Dusk",
+        "alt": "Neon city lights reflecting on rain-slicked streets in Tokyo",
+        "aspectRatio": "16/9"
+      }
+    ]
+  },
+  {
+    "id": "tapaufest-2025",
+    "slug": "tapaufest-2025",
+    "title": "TAPAUFEST 2025",
+    "description": "Event covered for Noisy Headspace (Official Media Partner)",
+    "cover": "cityscape.jpg",
+    "photos": [
+      {
+        "id": "cityscape",
+        "filename": "cityscape.jpg",
+        "title": "Tokyo at Dusk",
+        "alt": "Neon city lights reflecting on rain-slicked streets in Tokyo",
+        "aspectRatio": "16/9"
+      }
+    ]
+  },
+  {
+    "id": "pentas-gegar-kosmik-2024",
+    "slug": "pentas-gegar-kosmik-2024",
+    "title": "PENTAS GEGAR KOSMIK 2024",
+    "description": "Free event",
+    "cover": "cityscape.jpg",
+    "photos": [
+      {
+        "id": "cityscape",
+        "filename": "cityscape.jpg",
+        "title": "Tokyo at Dusk",
+        "alt": "Neon city lights reflecting on rain-slicked streets in Tokyo",
+        "aspectRatio": "16/9"
+      }
+    ]
+  },
+  {
+    "id": "kotak-muzik-kita",
+    "slug": "kotak-muzik-kita",
+    "title": "KOTAK MUZIK KITA 2023",
+    "description": "Event covered for Gamon Society (Organizer)",
+    "cover": "cityscape.jpg",
+    "photos": [
+      {
+        "id": "cityscape",
+        "filename": "cityscape.jpg",
+        "title": "Tokyo at Dusk",
+        "alt": "Neon city lights reflecting on rain-slicked streets in Tokyo",
+        "aspectRatio": "16/9"
+      }
+    ]
+  }
+]

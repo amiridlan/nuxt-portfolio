@@ -1,0 +1,30 @@
+[
+  {
+    "category": "Cameras",
+    "items": [
+      { "name": "Sony α7r III" },
+      { "name": "DJI Osmo Action 6" }
+    ]
+  },
+  {
+    "category": "Lenses",
+    "items": [
+      { "name": "Sony 70-200mm f/4" },
+      { "name": "Sony FE 50mm f/1.8" }
+    ]
+  },
+  {
+    "category": "Support & Filters",
+    "items": [
+      { "name": "Peak Design Travel Tripod" },
+      { "name": "K&F Mist Filter" }
+    ]
+  },
+  {
+    "category": "Software",
+    "items": [
+      { "name": "Davinci Resolve" },
+      { "name": "Capture One Pro" }
+    ]
+  }
+]
