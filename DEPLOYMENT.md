@@ -27,6 +27,7 @@ Live site at https://yoursite.netlify.app
 ```
 
 **What you need before starting:**
+
 - A [Cloudflare account](https://dash.cloudflare.com/sign-up) (free)
 - A [Netlify account](https://app.netlify.com/signup) (free)
 - A [GitHub account](https://github.com) with this repo pushed to it
@@ -49,7 +50,7 @@ Zero egress fees — Cloudflare does not charge you for image downloads.
 
 1. Click **Create bucket**
 2. **Bucket name:** use something like `portfolio-photos` (lowercase, hyphens only)
-3. **Location:** leave as *Automatic* unless you have a specific region preference
+3. **Location:** leave as _Automatic_ unless you have a specific region preference
 4. Click **Create bucket**
 
 ### Step 3 — Upload your photos
@@ -87,19 +88,23 @@ By default R2 buckets are private. You need to make yours publicly readable.
 ### Step 5 — Test your URL
 
 After enabling public access, test that a photo is reachable by opening:
+
 ```
 https://YOUR_R2_URL/your-photo.jpg
 ```
+
 in a browser. You should see the image. If you get a 403, go back to Step 4 — access is not yet public.
 
 ### Step 6 — Note your R2 URL
 
 Write down your public base URL (no trailing slash):
+
 ```
 https://pub-xxxxxxxxxxxxxxxx.r2.dev
    or
 https://cdn.amiridlan.my
 ```
+
 You will use this in Part 2 and Part 3.
 
 ---
@@ -129,10 +134,10 @@ git push -u origin main
 
 Netlify may auto-detect these from `netlify.toml` — verify they match:
 
-| Setting | Value |
-|---------|-------|
-| **Base directory** | *(leave blank)* |
-| **Build command** | `npm run build` |
+| Setting               | Value             |
+| --------------------- | ----------------- |
+| **Base directory**    | _(leave blank)_   |
+| **Build command**     | `npm run build`   |
 | **Publish directory** | `.netlify/static` |
 
 > These are already set correctly in `netlify.toml` at the project root — Netlify reads it
@@ -143,12 +148,12 @@ Netlify may auto-detect these from `netlify.toml` — verify they match:
 1. In your Netlify site dashboard, go to **Site configuration → Environment variables**
 2. Click **Add a variable** for each of the following:
 
-| Variable | Value |
-|----------|-------|
-| `NUXT_PUBLIC_R2_BASE_URL` | Your R2 public URL from Part 1 Step 6 |
+| Variable                    | Value                                       |
+| --------------------------- | ------------------------------------------- |
+| `NUXT_PUBLIC_R2_BASE_URL`   | Your R2 public URL from Part 1 Step 6       |
 | `NUXT_PUBLIC_INSTAGRAM_URL` | e.g. `https://www.instagram.com/_amirmir6/` |
-| `NUXT_PUBLIC_WEBSITE_URL` | e.g. `https://amiridlan.my/` |
-| `NUXT_PUBLIC_CONTACT_EMAIL` | e.g. `amiridlan6@gmail.com` |
+| `NUXT_PUBLIC_WEBSITE_URL`   | e.g. `https://amiridlan.my/`                |
+| `NUXT_PUBLIC_CONTACT_EMAIL` | e.g. `amiridlan6@gmail.com`                 |
 
 > These are **not** the same as GitHub secrets. Netlify's env vars are used when you trigger a
 > build directly from the Netlify dashboard. GitHub secrets (Part 3) are used when CI builds.
@@ -164,16 +169,18 @@ Netlify may auto-detect these from `netlify.toml` — verify they match:
 Since `amiridlan.my` is on Cloudflare, the DNS record needs to be set there, not in Netlify.
 
 **In Netlify:**
+
 1. Go to **Domain management → Add a domain**
 2. Enter `photography.amiridlan.my` and click **Verify** → **Add domain**
 3. Netlify will show a pending DNS verification screen — leave this open
 
 **In Cloudflare (amiridlan.my zone):**
+
 1. Go to [dash.cloudflare.com](https://dash.cloudflare.com) → select `amiridlan.my` → **DNS → Records**
 2. Click **Add record**:
 
-   | Type | Name | Target | Proxy status |
-   |------|------|--------|--------------|
+   | Type    | Name          | Target                       | Proxy status              |
+   | ------- | ------------- | ---------------------------- | ------------------------- |
    | `CNAME` | `photography` | `your-site-name.netlify.app` | **DNS only (grey cloud)** |
 
    > The target is your Netlify subdomain — find it in **Site configuration → Site details → Netlify subdomain**.
@@ -181,9 +188,7 @@ Since `amiridlan.my` is on Cloudflare, the DNS record needs to be set there, not
 
 3. Save the record — DNS propagation takes 1–5 minutes (sometimes up to an hour)
 
-**Back in Netlify:**
-4. Click **Verify DNS configuration** — once it detects the record, Netlify automatically provisions a free SSL certificate via Let's Encrypt
-5. Your site will be live at `https://photography.amiridlan.my`
+**Back in Netlify:** 4. Click **Verify DNS configuration** — once it detects the record, Netlify automatically provisions a free SSL certificate via Let's Encrypt 5. Your site will be live at `https://photography.amiridlan.my`
 
 > **HTTPS:** Netlify handles SSL automatically — no extra setup needed.
 
@@ -211,11 +216,11 @@ every time you push to `main`. This requires three GitHub secrets.
 1. Go to your GitHub repository → **Settings → Secrets and variables → Actions**
 2. Click **New repository secret** for each:
 
-| Secret name | Value |
-|-------------|-------|
-| `NETLIFY_AUTH_TOKEN` | Token from Step 1 |
-| `NETLIFY_SITE_ID` | Site ID from Step 2 |
-| `R2_BASE_URL` | Your R2 public URL from Part 1 Step 6 |
+| Secret name          | Value                                 |
+| -------------------- | ------------------------------------- |
+| `NETLIFY_AUTH_TOKEN` | Token from Step 1                     |
+| `NETLIFY_SITE_ID`    | Site ID from Step 2                   |
+| `R2_BASE_URL`        | Your R2 public URL from Part 1 Step 6 |
 
 > Note: The CI workflow injects `R2_BASE_URL` as `NUXT_PUBLIC_R2_BASE_URL` at build time.
 > The other social/contact env vars default to the values hardcoded in `nuxt.config.ts` —
@@ -265,12 +270,12 @@ Once deployed, adding new photos is a two-step process:
 
 **Common aspect ratios:**
 
-| Value | Shape |
-|-------|-------|
-| `"2/3"` | Tall portrait (35mm) |
-| `"3/2"` | Landscape |
-| `"4/5"` | Slight portrait |
-| `"1/1"` | Square |
+| Value    | Shape                 |
+| -------- | --------------------- |
+| `"2/3"`  | Tall portrait (35mm)  |
+| `"3/2"`  | Landscape             |
+| `"4/5"`  | Slight portrait       |
+| `"1/1"`  | Square                |
 | `"16/9"` | Widescreen / panorama |
 
 ---

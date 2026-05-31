@@ -7,15 +7,15 @@ Follow these guidelines strictly when reading, writing, or modifying any file in
 
 ## Commands
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start dev server at `http://localhost:3000` with HMR |
-| `npm run build` | Production build — outputs SSR bundle to `.output/` |
-| `npm run preview` | Preview the production build locally |
-| `npm run generate` | Fully static output (alternative to SSR) |
-| `npm run typecheck` | TypeScript type checking via `nuxt typecheck` |
-| `npm install` | Install all dependencies from `package.json` |
-| `npm ci` | Clean install (CI/CD use only — requires `package-lock.json`) |
+| Command             | Description                                                   |
+| ------------------- | ------------------------------------------------------------- |
+| `npm run dev`       | Start dev server at `http://localhost:3000` with HMR          |
+| `npm run build`     | Production build — outputs SSR bundle to `.output/`           |
+| `npm run preview`   | Preview the production build locally                          |
+| `npm run generate`  | Fully static output (alternative to SSR)                      |
+| `npm run typecheck` | TypeScript type checking via `nuxt typecheck`                 |
+| `npm install`       | Install all dependencies from `package.json`                  |
+| `npm ci`            | Clean install (CI/CD use only — requires `package-lock.json`) |
 
 ---
 
@@ -75,21 +75,21 @@ nuxt-portfolio/
 
 ```typescript
 interface GalleryPhoto {
-  id: string
-  filename: string   // filename only, no path — e.g. "iceland.jpg"
-  title: string      // display title shown in caption
-  alt: string        // screen-reader description
-  aspectRatio: string // CSS aspect-ratio value — e.g. "3/2", "16/9", "2/3"
+  id: string;
+  filename: string; // filename only, no path — e.g. "iceland.jpg"
+  title: string; // display title shown in caption
+  alt: string; // screen-reader description
+  aspectRatio: string; // CSS aspect-ratio value — e.g. "3/2", "16/9", "2/3"
 }
 
 // Albums are the top-level unit. Photos nest inside an album.
 interface Album {
-  id: string
-  slug: string         // URL segment — e.g. "wild-landscapes"
-  title: string
-  description: string  // shown on the album detail page
-  cover: string        // cover image filename, framed 3:4 on the home grid
-  photos: GalleryPhoto[]
+  id: string;
+  slug: string; // URL segment — e.g. "wild-landscapes"
+  title: string;
+  description: string; // shown on the album detail page
+  cover: string; // cover image filename, framed 3:4 on the home grid
+  photos: GalleryPhoto[];
 }
 ```
 
@@ -99,14 +99,14 @@ The site is **fully dark** with a Muji / Japandi aesthetic. Color tokens are def
 `tailwind.config.ts` under `theme.extend.colors`. **Always use these tokens — never hardcode hex or
 use default Tailwind grays/whites in components.**
 
-| Role | Weight | Token classes | Hex | Usage |
-|------|--------|---------------|-----|-------|
-| Background base | **60%** | `bg-ink` | `#191A18` | Page background (applied by `layouts/default.vue`) |
-| Surfaces / cards | **30%** | `bg-stone` / `bg-stone-light` | `#262825` / `#2F312D` | Cards, panels, **skeletons**, elevated surfaces |
-| Accent | **10%** | `text-sage` / `text-sage-light` / `ring-sage` | `#8A9A82` / `#9DAE94` | Links, icon hover, **focus rings**, active states — used *sparingly* |
-| Text primary | — | `text-bone` | `#E6E6E1` | Headings & body copy |
-| Text muted | — | `text-muted` | `#A6A69E` | Captions, metadata, secondary copy |
-| Hairline | — | `border-line` | `#34362F` | 1px dividers & borders |
+| Role             | Weight  | Token classes                                 | Hex                   | Usage                                                                |
+| ---------------- | ------- | --------------------------------------------- | --------------------- | -------------------------------------------------------------------- |
+| Background base  | **60%** | `bg-ink`                                      | `#191A18`             | Page background (applied by `layouts/default.vue`)                   |
+| Surfaces / cards | **30%** | `bg-stone` / `bg-stone-light`                 | `#262825` / `#2F312D` | Cards, panels, **skeletons**, elevated surfaces                      |
+| Accent           | **10%** | `text-sage` / `text-sage-light` / `ring-sage` | `#8A9A82` / `#9DAE94` | Links, icon hover, **focus rings**, active states — used _sparingly_ |
+| Text primary     | —       | `text-bone`                                   | `#E6E6E1`             | Headings & body copy                                                 |
+| Text muted       | —       | `text-muted`                                  | `#A6A69E`             | Captions, metadata, secondary copy                                   |
+| Hairline         | —       | `border-line`                                 | `#34362F`             | 1px dividers & borders                                               |
 
 **Principles:** generous whitespace, restrained type with wide tracking, matte surfaces (no glossy
 gradients), photographs are the only saturated color. Accent sage is for interaction states and
@@ -116,17 +116,17 @@ small marks only — never large fills. All text/background pairs must clear **W
 
 Use Tailwind utilities exclusively. No custom CSS except scoped `<style scoped>` for `<Transition>` named animations.
 
-| Pattern | Class |
-|---------|-------|
-| Masonry grid container | `columns-1 md:columns-2 lg:columns-3 gap-4` |
-| Column break prevention | `break-inside-avoid-column mb-4` |
-| Skeleton placeholder | `animate-pulse bg-stone` |
-| Image opacity transition | `transition-opacity duration-500` |
-| Lightbox overlay | `fixed inset-0 z-50 bg-black/90` |
-| Aspect-ratio wrapper | `relative w-full overflow-hidden rounded` |
-| Image fill inside wrapper | `absolute inset-0 w-full h-full object-cover` |
-| Focus ring (interactive) | `focus:outline-none focus-visible:ring-2 focus-visible:ring-sage` |
-| Icon link hit target | `inline-flex h-11 w-11 items-center justify-center` |
+| Pattern                   | Class                                                             |
+| ------------------------- | ----------------------------------------------------------------- |
+| Masonry grid container    | `columns-1 md:columns-2 lg:columns-3 gap-4`                       |
+| Column break prevention   | `break-inside-avoid-column mb-4`                                  |
+| Skeleton placeholder      | `animate-pulse bg-stone`                                          |
+| Image opacity transition  | `transition-opacity duration-500`                                 |
+| Lightbox overlay          | `fixed inset-0 z-50 bg-black/90`                                  |
+| Aspect-ratio wrapper      | `relative w-full overflow-hidden rounded`                         |
+| Image fill inside wrapper | `absolute inset-0 w-full h-full object-cover`                     |
+| Focus ring (interactive)  | `focus:outline-none focus-visible:ring-2 focus-visible:ring-sage` |
+| Icon link hit target      | `inline-flex h-11 w-11 items-center justify-center`               |
 
 ### Composables & Runtime
 
@@ -142,10 +142,10 @@ Use Tailwind utilities exclusively. No custom CSS except scoped `<style scoped>`
 
 ## Routing
 
-| Route | Page file | Renders |
-|-------|-----------|---------|
-| `/` | `pages/index.vue` | 3:4 album-cover grid (`AlbumGrid`) + equipment & contact (S5) |
-| `/albums/[slug]` | `pages/albums/[slug].vue` | Album's masonry `ImageGrid` + `Lightbox` |
+| Route            | Page file                 | Renders                                                       |
+| ---------------- | ------------------------- | ------------------------------------------------------------- |
+| `/`              | `pages/index.vue`         | 3:4 album-cover grid (`AlbumGrid`) + equipment & contact (S5) |
+| `/albums/[slug]` | `pages/albums/[slug].vue` | Album's masonry `ImageGrid` + `Lightbox`                      |
 
 - Album pages resolve `useRoute().params.slug` against `albums.json`.
 - Unknown slug → `throw createError({ statusCode: 404, fatal: true })`, rendered by `app/error.vue`.
@@ -180,6 +180,7 @@ a nested `photos` array of `GalleryPhoto`. (The legacy flat `gallery.json` was r
 ```
 
 **Rules:**
+
 - `id` and `slug` must be unique across all albums; photo `id` unique within the project
 - `slug` is the URL segment — kebab-case, no spaces
 - `cover` and each photo `filename` must match exactly the filename in the Cloudflare R2 bucket
@@ -193,8 +194,8 @@ a nested `photos` array of `GalleryPhoto`. (The legacy flat `gallery.json` was r
 
 ```typescript
 interface EquipmentGroup {
-  category: string                          // e.g. "Cameras", "Lenses"
-  items: { name: string; detail?: string }[]
+  category: string; // e.g. "Cameras", "Lenses"
+  items: { name: string; detail?: string }[];
 }
 ```
 
@@ -234,10 +235,11 @@ NUXT_PUBLIC_CONTACT_EMAIL=hello@yourdomain.com
 
 ## Deployment
 
-- **Preset**: `nitro.preset: 'netlify'` in `nuxt.config.ts`
-- **Build output**: `.output/` (Netlify Functions + static assets)
+- **Strategy**: Fully static — `npm run generate` (Nitro `prerender` with `crawlLinks: true`)
+- **Build output**: `.output/public/` (static HTML + assets — no server runtime)
 - **Trigger**: Push to `main` branch runs `.github/workflows/deploy.yml`
-- **Required secrets in GitHub**: `NETLIFY_AUTH_TOKEN`, `NETLIFY_SITE_ID`, `R2_BASE_URL`
+- **Deploy command**: `netlify deploy --prod --dir .output/public`
+- **Required secrets in GitHub**: `NETLIFY_AUTH_TOKEN`, `NETLIFY_SITE_ID`, `R2_BASE_URL`, `NUXT_PUBLIC_INSTAGRAM_URL`, `NUXT_PUBLIC_WEBSITE_URL`, `NUXT_PUBLIC_CONTACT_EMAIL`
 
 ---
 
