@@ -31,14 +31,14 @@ defineProps<{
         :key="group.category"
         class="rounded border border-line bg-stone p-6"
       >
-        <h3 class="text-xs font-medium tracking-widest uppercase text-sage-light">
+        <h3 class="text-sm font-medium tracking-widest uppercase text-sage-light">
           {{ group.category }}
         </h3>
         <ul class="mt-4 space-y-3">
           <li
             v-for="item in group.items"
             :key="item.name"
-            class="text-sm font-light text-bone"
+            class="text-lg font-light text-bone"
           >
             {{ item.name }}
           </li>

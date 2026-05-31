@@ -14,17 +14,19 @@
     ]
   },
   {
-    "category": "Support & Filters",
+    "category": "Accessories",
     "items": [
-      { "name": "Peak Design Travel Tripod" },
-      { "name": "K&F Mist Filter" }
+      { "name": "JOBY Gorilla Tripod" },
+      { "name": "K&F Mist Filter" },
+      { "name": "Godox TT600 Flash" }
     ]
   },
   {
     "category": "Software",
     "items": [
       { "name": "Davinci Resolve" },
-      { "name": "Capture One Pro" }
+      { "name": "Capture One Pro" },
+      { "name": "Affinity Studio" }
     ]
   }
 ]

@@ -348,14 +348,105 @@
     "slug": "pentas-gegar-kosmik-2024",
     "title": "PENTAS GEGAR KOSMIK 2024",
     "description": "Free event",
-    "cover": "cityscape.jpg",
+    "cover": "pentas-gegar-kosmik-2024/pgk_5.avif",
     "photos": [
       {
-        "id": "cityscape",
-        "filename": "cityscape.jpg",
-        "title": "Tokyo at Dusk",
-        "alt": "Neon city lights reflecting on rain-slicked streets in Tokyo",
-        "aspectRatio": "16/9"
+        "id": "pentas-gegar-kosmik-2024",
+        "filename": "pentas-gegar-kosmik-2024/pgk_1.avif",
+        "title": "PENTAS GEGAR KOSMIK 2024",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "pentas-gegar-kosmik-2024",
+        "filename": "pentas-gegar-kosmik-2024/pgk_2.avif",
+        "title": "PENTAS GEGAR KOSMIK 2024",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },{
+        "id": "pentas-gegar-kosmik-2024",
+        "filename": "pentas-gegar-kosmik-2024/pgk_3.avif",
+        "title": "PENTAS GEGAR KOSMIK 2024",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },{
+        "id": "pentas-gegar-kosmik-2024",
+        "filename": "pentas-gegar-kosmik-2024/pgk_4.avif",
+        "title": "PENTAS GEGAR KOSMIK 2024",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },{
+        "id": "pentas-gegar-kosmik-2024",
+        "filename": "pentas-gegar-kosmik-2024/pgk_5.avif",
+        "title": "PENTAS GEGAR KOSMIK 2024",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },{
+        "id": "pentas-gegar-kosmik-2024",
+        "filename": "pentas-gegar-kosmik-2024/pgk_6.avif",
+        "title": "PENTAS GEGAR KOSMIK 2024",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },{
+        "id": "pentas-gegar-kosmik-2024",
+        "filename": "pentas-gegar-kosmik-2024/pgk_7.avif",
+        "title": "PENTAS GEGAR KOSMIK 2024",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },{
+        "id": "pentas-gegar-kosmik-2024",
+        "filename": "pentas-gegar-kosmik-2024/pgk_8.avif",
+        "title": "PENTAS GEGAR KOSMIK 2024",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },{
+        "id": "pentas-gegar-kosmik-2024",
+        "filename": "pentas-gegar-kosmik-2024/pgk_9.avif",
+        "title": "PENTAS GEGAR KOSMIK 2024",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },{
+        "id": "pentas-gegar-kosmik-2024",
+        "filename": "pentas-gegar-kosmik-2024/pgk_10.avif",
+        "title": "PENTAS GEGAR KOSMIK 2024",
+        "alt": "",
+        "aspectRatio": "5/4"
+      },{
+        "id": "pentas-gegar-kosmik-2024",
+        "filename": "pentas-gegar-kosmik-2024/pgk_11.avif",
+        "title": "PENTAS GEGAR KOSMIK 2024",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },{
+        "id": "pentas-gegar-kosmik-2024",
+        "filename": "pentas-gegar-kosmik-2024/pgk_12.avif",
+        "title": "PENTAS GEGAR KOSMIK 2024",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },{
+        "id": "pentas-gegar-kosmik-2024",
+        "filename": "pentas-gegar-kosmik-2024/pgk_13.avif",
+        "title": "PENTAS GEGAR KOSMIK 2024",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },{
+        "id": "pentas-gegar-kosmik-2024",
+        "filename": "pentas-gegar-kosmik-2024/pgk_14.avif",
+        "title": "PENTAS GEGAR KOSMIK 2024",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },{
+        "id": "pentas-gegar-kosmik-2024",
+        "filename": "pentas-gegar-kosmik-2024/pgk_15.avif",
+        "title": "PENTAS GEGAR KOSMIK 2024",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },{
+        "id": "pentas-gegar-kosmik-2024",
+        "filename": "pentas-gegar-kosmik-2024/pgk_16.avif",
+        "title": "PENTAS GEGAR KOSMIK 2024",
+        "alt": "",
+        "aspectRatio": "3/4"
       }
     ]
   },

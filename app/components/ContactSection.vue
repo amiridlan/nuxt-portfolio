@@ -31,8 +31,8 @@ const websiteLabel = computed(() => websiteUrl.replace(/^https?:\/\//, '').repla
           :href="`mailto:${contactEmail}`"
           class="flex items-center justify-between gap-4 px-6 py-4 text-sm transition-colors duration-200 hover:bg-stone-light focus:outline-none focus-visible:ring-2 focus-visible:ring-sage focus-visible:ring-inset"
         >
-          <span class="text-xs tracking-widest uppercase text-muted">Email</span>
-          <span class="font-light text-bone">{{ contactEmail }}</span>
+          <span class="text-md tracking-widest uppercase text-muted">Email</span>
+          <span class="font-light text-lg text-bone">{{ contactEmail }}</span>
         </a>
       </li>
       <li>
@@ -43,10 +43,10 @@ const websiteLabel = computed(() => websiteUrl.replace(/^https?:\/\//, '').repla
           aria-label="Visit our Instagram profile"
           class="flex items-center justify-between gap-4 px-6 py-4 text-sm transition-colors duration-200 hover:bg-stone-light focus:outline-none focus-visible:ring-2 focus-visible:ring-sage focus-visible:ring-inset"
         >
-          <span class="flex items-center gap-2 text-xs tracking-widest uppercase text-muted">
+          <span class="flex items-center gap-2 text-md tracking-widest uppercase text-muted">
             <IconInstagram class="h-4 w-4" /> Instagram
           </span>
-          <span class="font-light text-bone">{{ instagramHandle }}</span>
+          <span class="font-light text-lg text-bone">{{ instagramHandle }}</span>
         </a>
       </li>
       <li>
@@ -57,10 +57,10 @@ const websiteLabel = computed(() => websiteUrl.replace(/^https?:\/\//, '').repla
           aria-label="Visit our website"
           class="flex items-center justify-between gap-4 px-6 py-4 text-sm transition-colors duration-200 hover:bg-stone-light focus:outline-none focus-visible:ring-2 focus-visible:ring-sage focus-visible:ring-inset"
         >
-          <span class="flex items-center gap-2 text-xs tracking-widest uppercase text-muted">
+          <span class="flex items-center gap-2 text-md tracking-widest uppercase text-muted">
             <IconWebsite class="h-4 w-4" /> Website
           </span>
-          <span class="font-light text-bone">{{ websiteLabel }}</span>
+          <span class="font-light text-lg text-bone">{{ websiteLabel }}</span>
         </a>
       </li>
     </ul>
