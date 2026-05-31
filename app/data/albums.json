@@ -455,14 +455,126 @@
     "slug": "kotak-muzik-kita",
     "title": "KOTAK MUZIK KITA 2023",
     "description": "Event covered for Gamon Society (Organizer)",
-    "cover": "cityscape.jpg",
+    "cover": "kotak-muzik-kita-2023/kmk_1.avif",
     "photos": [
       {
-        "id": "cityscape",
-        "filename": "cityscape.jpg",
-        "title": "Tokyo at Dusk",
-        "alt": "Neon city lights reflecting on rain-slicked streets in Tokyo",
-        "aspectRatio": "16/9"
+        "id": "kotak-muzik-kita",
+        "filename": "kotak-muzik-kita-2023/kmk_1.avif",
+        "title": "KOTAK MUZIK KITA 2023",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "kotak-muzik-kita",
+        "filename": "kotak-muzik-kita-2023/kmk_2.avif",
+        "title": "KOTAK MUZIK KITA 2023",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "kotak-muzik-kita",
+        "filename": "kotak-muzik-kita-2023/kmk_3.avif",
+        "title": "KOTAK MUZIK KITA 2023",
+        "alt": "",
+        "aspectRatio": "5/4"
+      },
+      {
+        "id": "kotak-muzik-kita",
+        "filename": "kotak-muzik-kita-2023/kmk_4.avif",
+        "title": "KOTAK MUZIK KITA 2023",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "kotak-muzik-kita",
+        "filename": "kotak-muzik-kita-2023/kmk_5.avif",
+        "title": "KOTAK MUZIK KITA 2023",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "kotak-muzik-kita",
+        "filename": "kotak-muzik-kita-2023/kmk_6.avif",
+        "title": "KOTAK MUZIK KITA 2023",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "kotak-muzik-kita",
+        "filename": "kotak-muzik-kita-2023/kmk_7.avif",
+        "title": "KOTAK MUZIK KITA 2023",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "kotak-muzik-kita",
+        "filename": "kotak-muzik-kita-2023/kmk_8.avif",
+        "title": "KOTAK MUZIK KITA 2023",
+        "alt": "",
+        "aspectRatio": "5/4"
+      },
+      {
+        "id": "kotak-muzik-kita",
+        "filename": "kotak-muzik-kita-2023/kmk_9.avif",
+        "title": "KOTAK MUZIK KITA 2023",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "kotak-muzik-kita",
+        "filename": "kotak-muzik-kita-2023/kmk_10.avif",
+        "title": "KOTAK MUZIK KITA 2023",
+        "alt": "",
+        "aspectRatio": "5/4"
+      },
+      {
+        "id": "kotak-muzik-kita",
+        "filename": "kotak-muzik-kita-2023/kmk_11.avif",
+        "title": "KOTAK MUZIK KITA 2023",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "kotak-muzik-kita",
+        "filename": "kotak-muzik-kita-2023/kmk_12.avif",
+        "title": "KOTAK MUZIK KITA 2023",
+        "alt": "",
+        "aspectRatio": "5/4"
+      },
+      {
+        "id": "kotak-muzik-kita",
+        "filename": "kotak-muzik-kita-2023/kmk_13.avif",
+        "title": "KOTAK MUZIK KITA 2023",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "kotak-muzik-kita",
+        "filename": "kotak-muzik-kita-2023/kmk_14.avif",
+        "title": "KOTAK MUZIK KITA 2023",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "kotak-muzik-kita",
+        "filename": "kotak-muzik-kita-2023/kmk_15.avif",
+        "title": "KOTAK MUZIK KITA 2023",
+        "alt": "",
+        "aspectRatio": "5/4"
+      },
+      {
+        "id": "kotak-muzik-kita",
+        "filename": "kotak-muzik-kita-2023/kmk_16.avif",
+        "title": "KOTAK MUZIK KITA 2023",
+        "alt": "",
+        "aspectRatio": "5/4"
+      },
+      {
+        "id": "kotak-muzik-kita",
+        "filename": "kotak-muzik-kita-2023/kmk_17.avif",
+        "title": "KOTAK MUZIK KITA 2023",
+        "alt": "",
+        "aspectRatio": "3/4"
       }
     ]
   }
