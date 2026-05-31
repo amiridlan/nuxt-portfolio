@@ -4,28 +4,139 @@
     "slug": "qwer-rockation-2026",
     "title": "QWER ROCKATION 2026",
     "description": "Event covered for Malaysian Kpop Fans (Official Media Partner)",
-    "cover": "iceland.jpg",
+    "cover": "qwer-rockation-2026/qwer-rockation-01.avif",
     "photos": [
       {
-        "id": "iceland",
-        "filename": "iceland.jpg",
-        "title": "Icelandic Highlands",
-        "alt": "Dramatic volcanic mountains under a stormy sky in Iceland",
-        "aspectRatio": "2/3"
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-01.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },{
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-02.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "3/4"
       },
       {
-        "id": "desert",
-        "filename": "desert.jpg",
-        "title": "Sahara Dunes",
-        "alt": "Sweeping sand dunes bathed in warm sunset light in the Sahara",
-        "aspectRatio": "3/2"
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-03.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "5/4"
       },
       {
-        "id": "forest",
-        "filename": "forest.jpg",
-        "title": "Pacific Northwest Forest",
-        "alt": "Towering ancient fir trees wrapped in morning mist",
-        "aspectRatio": "4/5"
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-04.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "5/4"
+      },
+      {
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-05.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "5/4"
+      },
+      {
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-06.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "5/4"
+      },
+      {
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-07.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "5/4"
+      },
+      {
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-08.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "5/4"
+      },
+      {
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-09.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-10.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "5/4"
+      },
+      {
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-11.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-12.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-13.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-14.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-15.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-16.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-17.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-18.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "qwer-rockation-2026",
+        "filename": "qwer-rockation-2026/qwer-rockation-19.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "3/4"
       }
     ]
   },
