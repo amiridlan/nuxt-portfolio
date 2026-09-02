@@ -1,5 +1,56 @@
 [
   {
+    "id": "animangaki-2026",
+    "slug": "animangaki-2026",
+    "title": "ANIMANGAKI 2026",
+    "description": "Event covered for ANIMANGAKI",
+    "cover": "amg-2026/aya-14.avif",
+    "photos": [
+      {
+        "id": "animangaki-2026",
+        "filename": "amg-2026/aya-14.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "animangaki-2026",
+        "filename": "amg-2026/aya-17.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "5/4"
+      },
+      {
+        "id": "animangaki-2026",
+        "filename": "amg-2026/aya-10.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "5/4"
+      },
+      {
+        "id": "animangaki-2026",
+        "filename": "amg-2026/aya-6.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "animangaki-2026",
+        "filename": "amg-2026/aya-12.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "animangaki-2026",
+        "filename": "amg-2026/aya-2.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "5/4"
+      }
+    ]
+  },
+  {
     "id": "qwer-rockation-2026",
     "slug": "qwer-rockation-2026",
     "title": "QWER ROCKATION 2026",
