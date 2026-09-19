@@ -18,25 +18,18 @@
         "filename": "amg-2026/honey-6.avif",
         "title": "ANIMANGAKI 2026",
         "alt": "",
-        "aspectRatio": "3/4"
-      },
-      {
-        "id": "animangaki-2026",
-        "filename": "amg-2026/sdf_3.avif",
-        "title": "ANIMANGAKI 2026",
-        "alt": "",
         "aspectRatio": "5/4"
       },
       {
         "id": "animangaki-2026",
-        "filename": "amg-2026/honey-1.avif",
+        "filename": "amg-2026/sdf-1.avif",
         "title": "ANIMANGAKI 2026",
         "alt": "",
         "aspectRatio": "3/4"
       },
       {
         "id": "animangaki-2026",
-        "filename": "amg-2026/aya-14.avif",
+        "filename": "amg-2026/honey-1.avif",
         "title": "ANIMANGAKI 2026",
         "alt": "",
         "aspectRatio": "3/4"
@@ -50,10 +43,10 @@
       },
       {
         "id": "animangaki-2026",
-        "filename": "amg-2026/sdf_2.avif",
+        "filename": "amg-2026/sdf-3.avif",
         "title": "QWER ROCKATION 2026",
         "alt": "",
-        "aspectRatio": "3/4"
+        "aspectRatio": "5/4"
       },
       {
         "id": "animangaki-2026",
@@ -85,7 +78,7 @@
       },
       {
         "id": "animangaki-2026",
-        "filename": "amg-2026/sdf_5.avif",
+        "filename": "amg-2026/sdf-4.avif",
         "title": "QWER ROCKATION 2026",
         "alt": "",
         "aspectRatio": "3/4"
@@ -114,6 +107,13 @@
       {
         "id": "animangaki-2026",
         "filename": "amg-2026/honey-3.avif",
+        "title": "QWER ROCKATION 2026",
+        "alt": "",
+        "aspectRatio": "3/4"
+      },
+      {
+        "id": "animangaki-2026",
+        "filename": "amg-2026/sdf-5.avif",
         "title": "QWER ROCKATION 2026",
         "alt": "",
         "aspectRatio": "3/4"
