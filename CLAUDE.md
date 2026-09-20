@@ -245,11 +245,31 @@ NUXT_PUBLIC_CONTACT_EMAIL=hello@yourdomain.com
 
 ## Performance Rules
 
-1. Every `<img>` in `ImageGrid.vue` must have `loading="lazy"` and `decoding="async"`
+1. Every `<img>` in `ImageGrid.vue` must have `loading="lazy"` and `decoding="async"` — **except the
+   first item** (`index === 0`), which is the likely LCP element: it gets `loading="eager"` and
+   `fetchpriority="high"` instead (never combine `loading="lazy"` with `fetchpriority="high"`). The
+   same first-item exception applies to `AlbumGrid.vue`'s cover grid.
 2. Every image container must use CSS `aspect-ratio` to prevent CLS — never set explicit pixel heights
 3. Never import a third-party carousel, lightbox, or animation library — use Vue `<Transition>` and native CSS
 4. Skeleton loaders use Tailwind `animate-pulse bg-stone` — no JavaScript animation libraries
 5. Icons are inline SVG components with `currentColor` — never add an icon library
+6. `index.vue` and `albums/[slug].vue` must `useHead()` a `<link rel="preload" as="image">` for the
+   first cover / first photo respectively, so the LCP image starts fetching before hydration
+7. `public/_headers` defines Netlify cache rules — `/_nuxt/*` build assets are `immutable, max-age=31536000`;
+   HTML routes are `must-revalidate`. Do not loosen HTML caching without also solving cache-busting for
+   `albums.json` content changes.
+8. `ImageGrid.vue`'s aspect-ratio div (the one carrying `:style="{ aspectRatio }"`) has
+   `[content-visibility:auto]` (Tailwind arbitrary property) so the browser skips layout/paint for
+   off-screen items on long album pages. **This must stay on the aspect-ratio div itself, never on
+   the `<article>` ancestor** — `content-visibility:auto` only avoids collapsing an element's size
+   when that same element has explicit sizing (Rule 2's `aspect-ratio`). Putting it on an ancestor
+   with no self-authored size lets the element collapse to zero height off-screen, which cascades
+   into full-page reflow/repaint thrash on scroll in a multi-column masonry layout (regressed once
+   already — Sprint 6).
+9. Every photo across every album must have a project-unique `id` (see Data Schema) — a shared/
+   duplicate `id` breaks `ImageGrid.vue`'s `:key` and its `loadedMap` skeleton-tracking, since both
+   key off `photo.id ?? photo.filename`. This caused a real scroll-lag bug (Sprint 6) where all
+   photos in an album shared the album's slug as their `id`.
 
 ---
 

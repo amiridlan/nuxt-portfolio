@@ -45,6 +45,16 @@ function closeLightbox() {
   selectedPhoto.value = null
 }
 
+useHead({
+  link: [
+    {
+      rel: 'preload',
+      as: 'image',
+      href: `${config.public.r2BaseUrl}/${currentAlbum.photos[0]?.filename ?? currentAlbum.cover}`,
+    },
+  ],
+})
+
 useSeoMeta({
   title: `${currentAlbum.title} — Photography Portfolio`,
   description: currentAlbum.description,

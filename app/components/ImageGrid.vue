@@ -26,7 +26,7 @@ function setLoaded(key: string) {
 <template>
   <div class="columns-1 md:columns-2 lg:columns-3 gap-4">
     <article
-      v-for="photo in photos"
+      v-for="(photo, index) in photos"
       :key="photo.id ?? photo.filename"
       class="break-inside-avoid-column mb-4 cursor-pointer group rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-sage focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
       role="button"
@@ -36,9 +36,12 @@ function setLoaded(key: string) {
       @keydown.enter="emit('openLightbox', photo)"
       @keydown.space.prevent="emit('openLightbox', photo)"
     >
-      <!-- Aspect-ratio container prevents CLS -->
+      <!-- Aspect-ratio container prevents CLS. content-visibility lives here (not on
+           <article>) because this div's size is self-determined by aspect-ratio — an
+           ancestor with no explicit size would collapse to zero height off-screen and
+           thrash the whole multi-column layout on scroll. -->
       <div
-        class="relative w-full overflow-hidden rounded bg-stone"
+        class="relative w-full overflow-hidden rounded bg-stone [content-visibility:auto]"
         :style="{ aspectRatio: photo.aspectRatio }"
       >
         <!-- Skeleton placeholder — fades out when image loads -->
@@ -50,12 +53,14 @@ function setLoaded(key: string) {
 
         <!-- Actual image — starts transparent, fades in on load.
              The :ref callback catches images already complete in browser cache
-             (the @load event fires before Vue attaches on a cached refresh). -->
+             (the @load event fires before Vue attaches on a cached refresh).
+             First photo is the likely LCP element: load it eagerly at high priority, everything else stays lazy. -->
         <img
           :ref="(el) => { if (el && (el as HTMLImageElement).complete) setLoaded(photo.id ?? photo.filename) }"
           :src="`${r2BaseUrl}/${photo.filename}`"
           :alt="photo.alt ?? photo.title"
-          loading="lazy"
+          :loading="index === 0 ? 'eager' : 'lazy'"
+          :fetchpriority="index === 0 ? 'high' : 'auto'"
           decoding="async"
           class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 group-hover:scale-[1.02] group-hover:transition-transform group-hover:duration-300"
           :class="loadedMap[photo.id ?? photo.filename] ? 'opacity-100' : 'opacity-0'"

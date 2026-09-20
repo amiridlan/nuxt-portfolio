@@ -28,6 +28,16 @@ const albums = albumData as Album[]
 const equipment = equipmentData as EquipmentGroup[]
 const config = useRuntimeConfig()
 
+useHead({
+  link: [
+    {
+      rel: 'preload',
+      as: 'image',
+      href: `${config.public.r2BaseUrl}/${albums[0]?.cover ?? ''}`,
+    },
+  ],
+})
+
 useSeoMeta({
   title: 'Photography Portfolio — Albums',
   description: 'A curated collection of landscape and travel photography, organised into albums.',

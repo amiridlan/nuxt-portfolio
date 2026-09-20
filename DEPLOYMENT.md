@@ -59,9 +59,25 @@ Zero egress fees — Cloudflare does not charge you for image downloads.
 2. Click **Upload** → drag and drop your `.jpg` / `.webp` files
 3. Keep filenames clean — lowercase, hyphens, no spaces (e.g. `qwer-rockation-01.jpg`)
 4. These filenames are what you put in `albums.json` under `"filename"` and `"cover"`
+5. **Set a `Cache-Control` metadata header on each object** so browsers and any CDN in front of the
+   bucket cache the photo instead of re-fetching it on every visit. In the Cloudflare dashboard,
+   after uploading, open the object → **Edit metadata** → set:
+   ```
+   Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+   ```
+   (7 days, not a 1-year `immutable` value — see the rename rule below for why.) If you prefer the
+   CLI, `wrangler r2 object put <bucket>/<key> --file <path> --cache-control "public, max-age=604800, stale-while-revalidate=86400"`
+   sets it at upload time in one step.
 
 > **Tip:** You can create "folders" by prefixing filenames with a path like `events/filename.jpg`,
 > but the portfolio just uses flat filenames — keep it simple.
+
+> **Never overwrite a photo's bytes under its existing filename.** Because filenames aren't
+> content-hashed, replacing `iceland.jpg` in place while a 7-day cache is still live means some
+> visitors keep seeing the old photo for up to a week. If a photo needs to change, upload it under
+> a new filename (e.g. `iceland-v2.jpg`) and update `albums.json` to point at it — never re-upload
+> over the old name. This is also what makes it safe to later raise the cache lifetime toward
+> `immutable`.
 
 ### Step 4 — Enable public access
 

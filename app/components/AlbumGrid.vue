@@ -30,7 +30,7 @@ function setLoaded(id: string) {
 
 <template>
   <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-    <li v-for="album in albums" :key="album.id">
+    <li v-for="(album, index) in albums" :key="album.id">
       <NuxtLink
         :to="`/albums/${album.slug}`"
         class="group block rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-sage focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
@@ -44,11 +44,13 @@ function setLoaded(id: string) {
             aria-hidden="true"
           />
 
+          <!-- First cover is the likely LCP element: load it eagerly at high priority, everything else stays lazy -->
           <img
             :ref="(el) => { if (el && (el as HTMLImageElement).complete) setLoaded(album.id) }"
             :src="`${r2BaseUrl}/${album.cover}`"
             :alt="`Cover image for ${album.title}`"
-            loading="lazy"
+            :loading="index === 0 ? 'eager' : 'lazy'"
+            :fetchpriority="index === 0 ? 'high' : 'auto'"
             decoding="async"
             class="absolute inset-0 h-full w-full object-cover transition-opacity duration-500 group-hover:scale-[1.02] group-hover:transition-transform group-hover:duration-300"
             :class="loadedMap[album.id] ? 'opacity-100' : 'opacity-0'"
